@@ -2,10 +2,30 @@
     "projects": [
         {
             "id": 0,
-            "project_name": "sfa",
+            "project_name": "portfolio",
+            "description": "portfolio webpage",
+            "technologies": ["HTML", "CSS", "Sass", "JavaScript"],
+            "live_link": "https://stevesbong.github.io/",
+            "github_link": "https://github.com/Stevesbong/Stevesbong.github.io",
+            "image_urls": ["../static/img/portfolioscreenshot.png"]
+        },
+        {
+            "id": 1,
+            "project_name": "OOP Game",
             "description": "generate quote",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": "http://stevesbong.github.io/"
+            "live_link": "https://stevesbong.github.io/OOP-Phrase-game/",
+            "github_link": "https://github.com/Stevesbong/OOP-Phrase-game",
+            "image_urls": ["../static/img/OOP-Phrase-game1.png", "../static/img/OOP-Phrase-game2.png", "../static/img/OOP-Phrase-game3.png"]
+        },
+        {
+            "id": 2,
+            "project_name": "E-commerce Website",
+            "description": "First Full-Stack e-commerce app that customers can buy Electronic parts and home decors. Admin is able to add and modify products.",
+            "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "Angular", "Python", "Django"],
+            "live_link": "https://youtu.be/ZkjzNqSG-t0",
+            "github_link": "https://github.com/Stevesbong/Angular-Django-Project",
+            "image_urls": ["../static/img/OOP-Phrase-game3.png", "../static/img/OOP-Phrase-game2.png", "../static/img/OOP-Phrase-game3.png"]
         }
     ]
 }
