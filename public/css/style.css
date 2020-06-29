@@ -1,6 +1,7 @@
 
 h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
+  text-shadow: 1px 1px 3px;
 }
 
   h5{
@@ -114,6 +115,11 @@ a:hover{
 
   .portfolio-index .thumbnail{
     margin-bottom: 5px;
+    transition: .5s;
+  }
+
+  .portfolio-index .thumbnail:hover{
+    transform: scale(1.1);
   }
 
   .portfolio-index a{
@@ -147,4 +153,30 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+.index-heading{
+  animation: 1s ease 0s 1 normal none rightToLeft;
+}
+
+@keyframes rightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-55px);
+  }
+  75% {
+    transform: translateX(20px);
+  }
+  90% {
+    transform: translateX(-55px);
+  }
+  to {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(.21,.61,.35,1);
+  }
+
 }
