@@ -1,27 +1,46 @@
+// REQUIRE EXPRESS AND PATH
 const express = require('express');
-const data = require('./data.json');
 const path = require('path');
-const app = express();
-// console.log(data)
-// console.log(path.dirname)
 
+
+// INSTANTIATE EXPRESS APP
+const app = express();
+
+
+// IMPORT ROUTE DEFINITION
 require('./routes')(app);
 
-app.use('/static', express.static('public'));
+
+// SETUP VIEW ENGINE
 app.set('view engine', 'pug');
 
-// app.use( (req, res, next) => {
-//     const err = new Error('Not found');
-//     err.status = 404;
-//     next(err)
-// })
 
-// app.use( (err, req, res, next) => {
-//     res.locals.error = err;
-//     const status = err.status || 500;
-//     res.status(status);
-//     res.render('error')
-// })
+// STATIC MIDDLEWARE FOR SERVING STATIC FILES
+app.use('/static', express.static(path.join(__dirname, 'public')));
+
+
+// 404 ERROR HANDLER
+app.use( (req, res, next) => {
+    console.log('404 error handler called');
+    const err = new Error();
+    err.status = 404;
+    res.status(404).render('not-found', {err})
+})
+
+
+// GLOBAL ERROR HANDLER
+app.use( (err, req, res, next) => {
+    if (err) {
+        console.log('Global error handler called', err);
+    }
+
+    if (err.status === 404) {
+        res.status(404).render('error', { err } )
+    } else {
+        err.message = err.message || 'Oops! It looks like someting went wrong'
+        res.status(err.status || 500).render('error', { err })
+    }
+})
 
 app.listen('3000', () => {
     console.log('listening port 3000 . . . ');

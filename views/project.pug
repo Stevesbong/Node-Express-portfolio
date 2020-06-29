@@ -20,10 +20,10 @@ block content
             li #{tech}
 
         if !project.live_link.includes('youtu.be')
-          a.button.expanded(href=`${project.live_link}`) Live Demo
+          a.button.expanded(href=`${project.live_link}` target='blank') Live Demo
         else
-          a.button.expanded(href=`${project.live_link}`) Video
-        a.button.expanded(href=`${project.github_link}`) GitHub Repo
+          a.button.expanded(href=`${project.live_link}` target='blank') Video
+        a.button.expanded(href=`${project.github_link}` target='blank') GitHub Repo
     
     each image in project.image_urls
-      img.image(src=`${image}` style='width:350px; height:350px;')
+      img.image(src=`${image}` style='width:1200px; height:550px;')

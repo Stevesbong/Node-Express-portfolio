@@ -7,7 +7,8 @@
             "technologies": ["HTML", "CSS", "Sass", "JavaScript"],
             "live_link": "https://stevesbong.github.io/",
             "github_link": "https://github.com/Stevesbong/Stevesbong.github.io",
-            "image_urls": ["../static/img/portfolioscreenshot.png"]
+            "image_thumbnail_urls": "../static/img/portfolio-thumbnail.png",
+            "image_urls": ["../static/img/portfolio1.png", "../static/img/portfolio2.png", "../static/img/portfolio3.png", "../static/img/portfolio4.png", "../static/img/portfolio5.png"]
         },
         {
             "id": 1,
@@ -16,6 +17,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://stevesbong.github.io/OOP-Phrase-game/",
             "github_link": "https://github.com/Stevesbong/OOP-Phrase-game",
+            "image_thumbnail_urls": "../static/img/OOP-Phrase-game-thumbnail.png",
             "image_urls": ["../static/img/OOP-Phrase-game1.png", "../static/img/OOP-Phrase-game2.png", "../static/img/OOP-Phrase-game3.png"]
         },
         {
@@ -25,7 +27,8 @@
             "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "Angular", "Python", "Django"],
             "live_link": "https://youtu.be/ZkjzNqSG-t0",
             "github_link": "https://github.com/Stevesbong/Angular-Django-Project",
-            "image_urls": ["../static/img/OOP-Phrase-game3.png", "../static/img/OOP-Phrase-game2.png", "../static/img/OOP-Phrase-game3.png"]
+            "image_thumbnail_urls": "../static/img/E-commerce-thumbnail.png",
+            "image_urls": ["../static/img/E-commerce1.png", "../static/img/E-commerce2.png", "../static/img/E-commerce3.png", "../static/img/E-commerce4.png", "../static/img/E-commerce5.png"]
         }
     ]
 }
