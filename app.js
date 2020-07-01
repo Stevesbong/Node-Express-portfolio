@@ -42,10 +42,9 @@ app.use( (err, req, res, next) => {
         res.status(err.status || 500).render('error', { err })
     }
 })
-let port = process.env.PORT;
-if(port ==null || port == "") {
-    port = 3000;
-}
+
+let port = (process.env.PORT) ? process.env.PORT : 3000;
+
 app.listen(port, () => {
     console.log(`listening port 3000 . . . or ${port}`);
 })
