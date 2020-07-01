@@ -47,5 +47,5 @@ if(port ==null || port == "") {
     port = 3000;
 }
 app.listen(port, () => {
-    console.log('listening port 3000 . . . ');
+    console.log(`listening port 3000 . . . or ${port}`);
 })
