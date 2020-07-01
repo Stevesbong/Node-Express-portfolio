@@ -46,6 +46,7 @@ let port = process.env.PORT;
 if(port ==null || port == "") {
     port = 3000;
 }
+console.log('test')
 app.listen(port, () => {
     console.log(`listening port 3000 . . . or ${port}`);
 })
