@@ -46,5 +46,5 @@ app.use( (err, req, res, next) => {
 let port = (process.env.PORT) ? process.env.PORT : 3000;
 
 app.listen(port, () => {
-    console.log(`listening port 3000 . . . or ${port}`);
+    console.log(`listening port ${port} . . .`);
 })
