@@ -29,6 +29,26 @@
             "github_link": "https://github.com/Stevesbong/Angular-Django-Project",
             "image_thumbnail_urls": "../static/img/E-commerce-thumbnail.png",
             "image_urls": ["../static/img/E-commerce1.png", "../static/img/E-commerce2.png", "../static/img/E-commerce3.png", "../static/img/E-commerce4.png", "../static/img/E-commerce5.png"]
+        },
+        {
+            "id": 3,
+            "project_name": "Random Quote Generator",
+            "description": "Display A random Quote on the page using hard code quotes.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://stevesbong.github.io/Random-Quote-Generator/",
+            "github_link": "https://github.com/Stevesbong/Random-Quote-Generator",
+            "image_thumbnail_urls": "../static/img/randomQuoteGenerator-thumbnail.png",
+            "image_urls": ["../static/img/randomQuoteGenerator1.png", "../static/img/randomQuoteGenerator2.png", "../static/img/randomQuoteGenerator3.png", "../static/img/randomQuoteGenerator4.png"]
+        },
+        {
+            "id": 4,
+            "project_name": "Employee Dashboard",
+            "description": "Display Employee's Dashboard that shows what employee have done in the week, shows that how actively work, and communicate with others.",
+            "technologies": ["HTML", "CSS", "Sass", "JavaScript", "Chart.js"],
+            "live_link": "https://stevesbong.github.io/EmployeeDashboard/",
+            "github_link": "https://github.com/Stevesbong/EmployeeDashboard/",
+            "image_thumbnail_urls": "../static/img/EmployeeDashboard-thumbnail.png",
+            "image_urls": ["../static/img/EmployeeDashboard1.png", "../static/img/EmployeeDashboard2.png", "../static/img/EmployeeDashboard3.png", "../static/img/EmployeeDashboard4.png"]
         }
     ]
 }
